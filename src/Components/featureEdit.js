@@ -16,12 +16,12 @@ export const Container = styled.div`
 `
 
 export const SuiteStyle = styled.div`
-    background: blue;
+    background: grey;
     max-height:100%;
     overflow-y:auto;
 `
 export const SuiteDetailStyle = styled.div`
-    background: blue;
+    background: grey;
     display: flex;
     height: 200px;
     flex-direction: column;
@@ -44,7 +44,7 @@ export const VersionsStyle = styled.div`
 `
 
 export const InputBlockStyle = styled.div`
-    background: orange;
+    
     max-height:100%;
     width: 300px;
  

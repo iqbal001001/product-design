@@ -20,12 +20,12 @@ export const Container = styled.div`
 `
 
 export const SuiteStyle = styled.div`
-    background: blue;
+    background: grey;
     max-height:100%;
     overflow-y:auto;
 `
 export const SuiteDetailStyle = styled.div`
-    background: blue;
+    background: grey;
     display: flex;
 `
 

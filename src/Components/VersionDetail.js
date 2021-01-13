@@ -21,11 +21,11 @@ export const Container = styled.div`
     overflow-y:auto;
 
     .header{
-        background: red;
+        background: grey;
         display: flex;
     }
     .mid{
-        background: orange;
+        background: grey;
         display: flex;
     }
     .footer{
