@@ -9,8 +9,6 @@ import _ from 'lodash';
 import { useParams } from 'react-router-dom';
 import { useLocation, useHistory } from 'react-router-dom'
 
-
-//import * as ProductSrv from "../Service/ProductService";
 import { ProductService } from "../Service/ProductService";
 
 export const Container = styled.div`
@@ -32,11 +30,8 @@ export const Container = styled.div`
 `
 
 const VersionDetailContainer = () => {
-    // const [version, setVersion] = useState(null);
-    // const [originalVersion, setOriginalVersion] = useState(null);
     const version = useSelector(state => state.entities.version);
     const originalVersion = useSelector(state => state.entities.originalVersion);
-   // const [productLines, setProductLines] = useState([]);
     const [isDirtyVersion, setIsDirtyVersion] = useState(false);
 
     const dispatch = useDispatch();

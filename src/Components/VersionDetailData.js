@@ -13,8 +13,6 @@ import 'react-tabs/style/react-tabs.css';
 import ListDragAndDrop from './dnd/ListDragAndDrop';
 import _ from 'lodash';
 
-
-//import * as ProductSrv from "../Service/ProductService";
 import { ProductService } from "../Service/ProductService";
 
 export const Container = styled.div`
@@ -36,8 +34,6 @@ export const Container = styled.div`
 `
 
 const VersionDetail = ({mode, selected, onSave}) => {
-    // const [version, setVersion] = useState(null);
-    // const [originalVersion, setOriginalVersion] = useState(null);
     const version = useSelector(state => state.entities.version);
     const originalVersion = useSelector(state => state.entities.originalVersion);
     const [productLines, setProductLines] = useState([]);

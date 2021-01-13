@@ -15,7 +15,6 @@ export const Container = styled.div`
 `
 
 const ProductEditContainer = () => {
-   // const [suite, setSuite] = useState(ProductSrv.getNewSuite());
      const suite = useSelector(state => state.entities.suite);
      const originalSuite = useSelector(state => state.entities.originalSuite);
      const [isDirtySuite, setIsDirtySuite] = useState(false);
@@ -59,11 +58,9 @@ const ProductEditContainer = () => {
       if (Id === "new"){
         suite = productSrv.getNewSuite();
       }else{
-       // suite = await productSrv.getSuiteWithVersions(Id);
        suite = dispatch(loadSuite(Id));
       }
       console.log(suite);
-     // dispatch(updateSuite(suite));
 
    }
 

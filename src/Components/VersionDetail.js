@@ -35,9 +35,7 @@ export const Container = styled.div`
 
 const VersionDetail = ({mode, selected, onChange, onSave}) => {
      const [version, setVersion] = useState(null);
-    // const [originalVersion, setOriginalVersion] = useState(null);
-    //const version = useSelector(state => state.entities.version);
-    //const originalVersion = useSelector(state => state.entities.originalVersion);
+
     const [productLines, setProductLines] = useState([]);
     const [productCodes, setProductCodes] = useState([]);
     const [options, setOptions] = useState([]);
@@ -170,59 +168,6 @@ useEffect( () =>{
       //  onSave(v, savedToDB, mode);
       // }
 
-      // const updateStartDate = (date) => {
-      //   let v= {...version, StartDate:date}
-      //   setVersion({...version, StartDate:date});
-      //   //dispatch(updateVersion(v));
-      // }
-
-      // const updateEndDate = (date) => {
-      //   let v= {...version, EndDate:date}
-      //   setVersion(v);
-      //   //dispatch(updateVersion(v));
-      // }
-
-      // const updateDescription = (e) => {
-      //   let v= {...version, Discription:e}
-      //   dispatch(updateVersion(v));
-      //   console.log(e);
-      // }
-
-      // const updateMinAge = (e) => {
-      //   let v= {...version, MinAge:e}
-      //   dispatch(updateVersion(v));
-      //   console.log(e);
-      // }
-
-      // const toggleIsActive = () => {
-      //   let v= {...version, IsActive:!version.IsActive}
-      //   dispatch(updateVersion(v));
-      // }
-
-      // const toggleStaffSubsidy = () => {
-      //   let v= {...version, StaffSubsidy:!version.StaffSubsidy}
-      //   dispatch(updateVersion(v));
-      // }
-
-      // const updateSalesChannel = (value) => {
-      //   let v= {...version, SalesChannels:value}
-      //   dispatch(updateVersion(v));
-      // }
-
-      // const updateScale = (value) => {
-      //   let v= {...version, Scale:value}
-      //   dispatch(updateVersion(v));
-      // }
-
-      // const updateState = (value) => {
-      //   let v= {...version, StateCoverge:value}
-      //   dispatch(updateVersion(v));
-      // }
-
-      // const updateScaleQuoteMap = (value) => {
-      //   let v= {...version, ScaleQuoteMap:value}
-      //   dispatch(updateVersion(v));
-      // }
 
       const setField = ({target}) => {
         setVersion({...version, [target.name]: target.value});
