@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/9c6a5d41-5a3c-40bb-9e8a-87c571778c85/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/product-design",
+    "appService.deploySubpath": "."
+}
